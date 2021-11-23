@@ -49,7 +49,7 @@ import org.springframework.samples.petclinic.visit.Visit;
 public class Pet extends NamedEntity {
 
 	@Column(name = "birth_date")
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	@DateTimeFormat(pattern = "MM-dd-yyyy")
 	private LocalDate birthDate;
 
 	@ManyToOne
